@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "store") or die(mysqli_error($conn));
+$conn = mysqli_connect("localhost", "root", "", "ecommerce") or die(mysqli_error($conn));
 ?>
 <?php
 	// if already logged in, go to products page
