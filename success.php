@@ -26,11 +26,11 @@
             $user_id = $_SESSION["id"];
             $query = "SELECT item_id FROM users_items WHERE user_id = '$user_id'";
             $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
-            
+
             while($row = mysqli_fetch_array($result)){
                 $item_id = $row["item_id"];
                 $query1 = "UPDATE users_items SET status = 'Confirmed' WHERE item_id = '$item_id'";
-                
+
                 $result1 = mysqli_query($conn, $query1) or die(mysqli_error($conn));
             }
         ?>
